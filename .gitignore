@@ -1,0 +1,42 @@
+# Maven / Java build outputs
+**/target/
+**/build/
+
+# Maven wrapper (kept ignored to match existing services)
+**/.mvn/wrapper/maven-wrapper.jar
+
+# Logs and crash dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# IDEs
+## IntelliJ IDEA
+**/.idea/
+**/*.iws
+**/*.iml
+**/*.ipr
+
+## Eclipse / STS
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings/
+**/.springBeans
+**/.sts4-cache/
+
+## NetBeans
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+
+## VS Code
+**/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
