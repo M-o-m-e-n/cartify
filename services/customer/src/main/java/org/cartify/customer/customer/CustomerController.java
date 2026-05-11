@@ -3,7 +3,6 @@ package org.cartify.customer.customer;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,9 +22,9 @@ public class CustomerController {
         return ResponseEntity.ok(service.getCustomersWithPagination(page, size));
     }
 
-    @GetMapping()
+    @GetMapping("/{id}")
     public ResponseEntity<CustomerResponse> getCustomer(
-            @Param("id") String id
+            @PathVariable("id") String id
     ){
       return ResponseEntity.ok(service.getCustomer(id));
     }
